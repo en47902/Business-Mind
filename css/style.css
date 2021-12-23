@@ -43,19 +43,18 @@ body {
       }
       
       
-    /* Navbar */
+        /*      NAVBAR      */
 
 .navbar {
     background-color: #414e64;
     color: #fff;
     height: 65px;
 }
-      
+  
 .navbar ul {
-display: flex;
+    display: flex;
 }
-
-      
+   
 .navbar a {
     color: #fff;
     padding: 10px;
@@ -84,15 +83,18 @@ display: flex;
     height: 100%;
 }
 
-/*SHOWCASE*/
+       /*      SHOWCASE      */
 
-section{
+.showcase{
     display:flex;
     height: 100vh;
     align-items: center;
 }
+
 .showcase-text{
-z-index: 10;
+    z-index: 10;
+    margin: 0 auto;
+    padding: 0 40px;
 }
 .btn{
     cursor: pointer;
@@ -107,14 +109,168 @@ z-index: 10;
     transform: scale(0.97);
 }
 
-.bg-img{
-    background-image: url("../images/Home-Image.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+        /*      LOGIN PAGE CSS      */
+
+.showcase-login{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-login{
     position: relative;
-    z-index: -1;
-} 
+    margin-top: 100px;
+    width: 475px;
+    height: auto;
+    background: #adadad;
+    border-radius: 5px;
+}
+.label{
+    padding: 20px 130px;
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+.login-form{
+    padding: 20px 40px;
+}
+.login-form .font{
+    font-size: 18px;
+    color:black;
+    margin:5px 0 ;
+}
+.login-form .font2{
+    margin-top: 30px;
+}
+.login-form input{
+    height: 40px;
+    width: 385px;
+    padding: 0 5px;
+    font-size: 18px;
+    outline: none;
+    border:1px solid silver;
+}
+.login-form button{
+    margin: 45px 0 30px 0;
+    height: 45px;
+    font-size: 20px;
+    width: 385px;
+    color:rgb(255, 255, 255);
+    outline: none;
+    cursor: pointer;
+    font-weight:bold;
+    background: #484f9e;
+    border-radius: 3px;
+    border:1px solid #4c5bb9;
+    transition: .5s;
+}
+.login-form button:hover{
+    background: #252d81;
+}
+.login-form #email-error,
+.login-form #pass-error{
+    margin-top: 5px;
+    width: 385px;
+    font-size: 16px;
+    color:#c62828;
+    background:rgba(252, 24, 24, 0.199);
+    text-align: center;
+    padding: 5px 8px;
+    border-radius: 1px;
+    border: 1px solid #ef9a9a;
+   display: none;
+}
 
 
 
+
+/*tablets*/
+
+@media(max-width: 768px){   
+    
+    
+}
+
+
+/*mobile*/
+
+@media(max-width: 500px){
+   .navbar{
+    height: 110px;
+    }
+    
+    .navbar .flex{
+        flex-direction: column;
+    }
+    .navbar ul{
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.1);
+        margin: 3px;
+    }
+
+    .logo{
+        font-size: 1.5rem;
+    }
+    .navbar ul li a{
+        font-size: 0.9rem;
+    }
+
+    /* SHOWCASE */
+
+    .showcase{
+        height: 80vh;
+    }
+   
+    .showcase-text{
+        padding: 0;
+        font-size: 17px;
+    }
+
+    /* LOGIN */
+
+    .container-login{
+        position: relative;
+        margin-top: 90px;
+        width: 375px;
+        height: auto;
+        background: #adadad;
+        border-radius: 5px;
+    }
+    .label{
+        padding: 20px 100px;
+        font-size: 25px;
+        font-weight: bold;
+        color: black;
+        text-align: center;
+    }
+    .login-form{
+        padding: 10px 20px;
+    }
+    .login-form .font{
+        font-size: 14px;
+        color:black;
+        margin:5px 0 ;
+    }
+    .login-form .font2{
+        margin-top: 30px;
+    }
+    .login-form input{
+        height: 40px;
+        width: 335px;
+        padding: 0 5px;
+        font-size: 14px;
+        outline: none;
+        border:1px solid silver;
+    }
+    .login-form button{
+        font-size: 17px;
+        width: 335px;
+    }
+    .login-form #email-error,
+    .login-form #pass-error{
+        width: 335px;
+        font-size: 14px;
+}
+    
+}

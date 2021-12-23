@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Business Mind</title>
+</head>
+
+<body class="login-body">
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">BusinessMind</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">ContactUs</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+<section class="showcase-login">
+    <div class="container-login">
+        <h1 class="label">Login</h1>
+        <form class="login-form" action ="/index.html" method="GET" name="form"  onsubmit="return validated()">
+            <div class="font">Email</div>
+                <input autocomplete="off"  type="text" name="email">
+                <div id="email-error">Please fill up your Email</div>
+            <div class="font font2">Password</div>
+                <input type="password" name="password">
+                <div id="pass-error">Please fill up your Password</div>
+                <button type="submit">Login</button>
+        </form>
+    </div>
+</section>
+
+    <script src="js/script.js"></script>
+    <script src="js/validate.js"></script>
+
+</body>
+</html>
