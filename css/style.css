@@ -9,6 +9,9 @@
         padding: 0;
         margin: 0;
       }
+html{
+    overflow: auto;
+}
       
 body {
     font-family: 'Poppins', sans-serif;
@@ -151,6 +154,7 @@ body {
     justify-content: space-evenly;
 }
 .row{
+    margin: 0 30px;
     display: inline-flex;
     justify-content: space-between;
 }
@@ -249,11 +253,12 @@ body {
 .card-content{
     display: flex;
     justify-content: center;
-
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 .card{
     background: rgb(241, 230, 230);
-    width: 400px;
+    width: 370px;
     margin: 20px;
     color: black;
     border-radius: 10px;
@@ -694,7 +699,7 @@ input[type='checkbox'] {
 
 /*tablets*/
 
-@media(max-width: 991px){   
+@media(max-width: 995px){   
     .contact{
         padding: 50px;
     }
@@ -711,7 +716,81 @@ input[type='checkbox'] {
     .contactForm{
         width: 100%;
     }
+
+    .navbar{
+         height: 110px;
+    }
+        
+    .navbar .flex{
+        flex-direction: column;
+    }
+    .navbar ul{
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.1);
+        margin: 3px;
+        justify-content: space-between;
+    }
+    nav{
+        width:475px;
+    }
+    .logo{
+          font-size: 1.5rem;
+    }
+    .navbar ul li a{
+        font-size: 0.9rem;
+     }
+
     
+    .row{
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+    }
+    .row-desc {
+        margin: 10px 10px;
+    }
+    .col-lg-2 {
+        margin: 10px;
+        align-items: center;
+    }
+    .col-lg{
+        max-width: 100%;
+        margin: 10px;
+        padding-top:20px;
+    }
+    .img-fluid{ 
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .description .col-lg-5 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .description .card-desc {
+        margin-bottom: 2.5rem;
+        border: none;
+        text-align: center;
+        width: 500px;
+    }
+    .row-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .col-lg-3 {
+        width: 80%;
+    }
+    .col-lg-6{
+        width: 70%;
+    }
+    .form-1 {
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+    }
 }
 
 
@@ -721,7 +800,9 @@ input[type='checkbox'] {
    .navbar{
     height: 110px;
     }
-    
+    nav{
+        width:400px;
+    }
     .navbar .flex{
         flex-direction: column;
     }
@@ -748,6 +829,58 @@ input[type='checkbox'] {
         padding: 0;
         font-size: 17px;
     }
+
+    /* SERVICES */
+
+    .basic-1 {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .row{
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        margin: 0px 0px;
+    }
+    .row-desc {
+        margin: 10px 10px;
+    }
+    .col-lg-2 {
+        margin: 10px;
+        align-items: center;
+    }
+    .col-lg{
+        max-width: 600px;
+        margin: 10px;
+        padding-top:20px;
+    }
+    .img-fluid{ 
+        width: 90%;
+    }
+    .description .col-lg-5 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .description .card-desc {
+        margin-bottom: 2.5rem;
+        border: none;
+        text-align: center;
+        width: 380px;
+    }
+    .row-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .col-lg-3 {
+        width: 400px;
+    }
+    .col-lg-6{
+        width: 400px;
+    }
+
 
     /* LOGIN */
 
@@ -794,5 +927,9 @@ input[type='checkbox'] {
         width: 335px;
         font-size: 14px;
 }
+
+/*NA KONTAKTONI*/
+
+
     
 }
