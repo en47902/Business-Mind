@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+/* 
+    Author: Emanuel Nov;
+    Theme: Business service website admin;
+    Version: 1.0;
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #202d44;
+}
+
+.wrapper{
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+}
+.text-center{
+    text-align: center;
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+.tbl-full{
+    width: 100%;
+    border: 2px solid rgb(0, 0, 0);
+}
+.tbl-30{
+    width: 40%;
+}
+table tr th{
+    padding-top: 1%;
+    text-align: center;
+    color: white;
+    padding: 15px;
+    border-right: 2px solid black;
+    border-bottom:2px solid black ;
+}
+table tr td{
+    padding: 2%;
+    color: white;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.btn-1{
+    background-color: #1c85ee;
+    padding: 0.8%;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    margin-left: 6%;
+    border-radius: 7px;
+}
+.btn-1:hover{
+    background-color: rgb(48, 99, 240);
+}
+.btn-2{
+    background-color: #17863a;
+    padding:2% 1%;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    border-radius: 7px;
+}
+.btn-2:hover{
+    background-color: #0b752d;
+}
+.btn-3{
+    background-color: #f83c58;
+    padding:2% 1%;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    border-radius: 7px;
+}
+.btn-3:hover{
+    background-color: #db3a52;
+}
+.success{
+    color: #2bc45b;
+}
+.error{
+   color: #f83c58; 
+}
+
+
+/* css for main content */
+
+.main-content{
+    background-color: #202d44;
+    color: white;
+    padding: 3% 0;
+
+}
+
+.col-4{
+    width: 18%;
+    color: black;
+    background-color: white;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+}
+/* css for the menu */
+.menu{
+    background-color: #414e64;
+}
+.menu ul{
+    list-style-type: none;
+}
+.menu ul li{
+    display: inline;
+    padding: 3%;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+.menu ul li a:hover{
+    color: rgb(202, 199, 199);
+}
+
+/* css for the footer */
+.footer{
+    background-color: hsl(217, 51%, 11%);
+    color: white;
+    margin-top: auto;
+    height: 12%;
+}
